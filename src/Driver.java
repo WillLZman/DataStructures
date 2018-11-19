@@ -1,6 +1,13 @@
+import java.util.LinkedList;
+
 public class Driver {
 
     public static void main(String[] args) {
+        Driver driver = new Driver();
+        driver.createTestTrie();
+    }
+
+    private void createTestTrie(){
         Trie trie = new Trie();
         Trie.Node root = new Trie.Node();
         String keys[] = {"the", "a", "there", "answer", "any",
@@ -33,5 +40,9 @@ public class Driver {
         if(trie.search("thaw") == true)
             System.out.println("thaw --- " + output[1]);
         else System.out.println("thaw --- " + output[0]);
+    }
+
+    private void createTestLinkedList(){
+
     }
 }
